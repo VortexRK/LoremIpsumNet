@@ -27,7 +27,7 @@
   &_dots {
 		&:nth-child(n+2) {
 			&::before {
-				content: url(/img/dots5.png);
+				content: url(img/dots5.png);
 				position: absolute;
 				top: 40px;
 				left: -70px;
@@ -44,7 +44,7 @@
 		@media (max-width: 1080px) {
 			&:nth-child(n+2) {
 				&::before {
-					content: url(/img/dots4.png);
+					content: url(img/dots4.png);
 					left: -57px;
 				}
 			}
@@ -60,7 +60,7 @@
 		@media (max-width: $desktop) {
 			&:nth-child(n+2) {
 				&::before {
-					content: url(/img/dots5.png);
+					content: url(img/dots5.png);
 					position: absolute;
 					top: 40px;
 					left: -70px;
@@ -78,7 +78,7 @@
 		@media (max-width: 650px) {
 			&:nth-child(n+2) {
 				&::before {
-					content: url(/img/dots4.png);
+					content: url(img/dots4.png);
 					position: absolute;
 					top: 40px;
 					left: -57px;
@@ -96,7 +96,7 @@
 		@media (max-width: $bigPhone) {
 			&:nth-child(2n+2) {
 				&::before {
-					content: url(/img/dots5.png);
+					content: url(img/dots5.png);
 					left: -63px;
 				}
 			}
@@ -112,7 +112,7 @@
 		@media (max-width: $phone) {
 			&:nth-child(2n+2) {
 				&::before {
-					content: url(/img/dots2.png);
+					content: url(img/dots2.png);
 					position: absolute;
 					top: 40px;
 					left: -24px;
