@@ -5,6 +5,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   width: 100%;
+  transform: scale(0);
+  transition: 1s all;
 
   @media (max-width: $desktop) {
     grid-template-columns: 1fr 1fr;

@@ -3,11 +3,11 @@ document.querySelector('.select__main-window').addEventListener('click', toggleS
 document.querySelector('.select__list').addEventListener('click', selectValue)
 document.querySelector('.range__line').addEventListener('input', setRange)
 document.querySelector('.mobile-menu').addEventListener('click', toggleMenu)
+window.addEventListener('scroll', scrollContent)
 window.addEventListener('click', closeAll)
 
 function toggleMenuLink(e) {
 	const links = document.querySelectorAll('.menu__link')
-	console.log(links)
 	for (el of links) {
 		if (el.classList.contains('menu__link_active')) {
 			el.classList.remove('menu__link_active')
@@ -59,4 +59,20 @@ function toggleMenu() {
 	if (menu.style.left === '' || menu.style.left === '-800px') {
 		menu.style.left = '0px'
 	} else menu.style.left = '-800px'
+}
+
+const ordering_header = document.querySelector('.ordering__header')
+const work_scheme = document.querySelector('.work-scheme')
+const order_form = document.querySelector('.order-form')
+const ordering_wrapper = document.querySelector('.ordering__wrapper')
+function scrollContent() {
+	if (ordering_wrapper.getBoundingClientRect().top + 100 <= window.innerHeight) {
+		ordering_header.style.top = '0px'
+	}
+	if (work_scheme.getBoundingClientRect().top + 100 <= window.innerHeight) {
+		work_scheme.style.opacity = '1'
+	}
+	if (order_form.getBoundingClientRect().top + 100 <= window.innerHeight) {
+		order_form.style.transform = 'scale(1)'
+	}
 }

@@ -5,6 +5,9 @@
        column-gap: 30px;
   row-gap: 20px;
   align-items: flex-start;
+  position: relative;
+  opacity: 0;
+  transition: 1s all;
 }
 @media (max-width: 992px) {
   .work-scheme {

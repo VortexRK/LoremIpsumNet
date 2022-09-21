@@ -195,6 +195,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 120px 0 150px;
+  position: relative;
 
   @media (max-width: $desktop) {
     padding: 90px 0 100px;
@@ -214,6 +215,9 @@ body {
   &__header {
     margin-bottom: 80px;
     text-align: center;
+    position: relative;
+    top: 350px;
+    transition: 1s all;
 
     @media (max-width: $tablet) {
       margin-bottom: 60px;

@@ -107,6 +107,9 @@
        column-gap: 30px;
   row-gap: 20px;
   align-items: flex-start;
+  position: relative;
+  opacity: 0;
+  transition: 1s all;
 }
 @media (max-width: 992px) {
   .work-scheme {
@@ -220,6 +223,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   width: 100%;
+  transform: scale(0);
+  transition: 1s all;
 }
 @media (max-width: 992px) {
   .order-form {
@@ -688,6 +693,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 120px 0 150px;
+  position: relative;
 }
 @media (max-width: 992px) {
   .ordering {
@@ -708,6 +714,9 @@ body {
 .ordering__header {
   margin-bottom: 80px;
   text-align: center;
+  position: relative;
+  top: 350px;
+  transition: 1s all;
 }
 @media (max-width: 768px) {
   .ordering__header {
