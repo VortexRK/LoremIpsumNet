@@ -1,0 +1,27 @@
+.info-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.info-block__margin-right {
+  margin-right: 40px;
+}
+.info-block__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.info-block__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C3C3C3;
+}
+.info-block__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.info-block__link:hover {
+  color: #3E9CDC;
+}/*# sourceMappingURL=info-block.css.map */

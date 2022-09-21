@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+.menu {
+	word-break: break-word;
+
+	@media (max-width: $tablet) {
+		max-width: calc(100% - 50px);
+		position: absolute;
+		left: -800px;
+		top: -10px;
+		background-color: rgba(16,16,29, 0.99);
+		padding: 15px;
+		transition: 0.5s all;
+		box-shadow: 2px 2px 5px 2px #000;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 60px;
+		row-gap: 5px;
+
+		@media (max-width: $desktop) {
+			column-gap: 30px;
+		}
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			row-gap: 10px;
+		}
+	}
+
+	&__item {
+		// @media (max-width: $tablet) {
+		//   margin-bottom: 5px;
+		// }
+	}
+
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+
+		&:hover {
+			color: #43ABF0;
+		}
+
+		&_active {
+			color: #43ABF0;
+		}
+
+		@media (max-width: $tablet) {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
+}

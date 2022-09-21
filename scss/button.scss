@@ -1,0 +1,28 @@
+.btn {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 183px;
+	color: #2A2B30;
+	padding: 15px 0;
+	background-color: #fff;
+	border: 1px solid #6F6D7B;
+	border-radius: 4px;
+
+	&:hover {
+		background-color: rgb(201, 201, 201);
+	}
+
+	&_blue {
+		background-color: #3E9CDC;
+		color: #FFFFFF;
+		border: 1px solid #FFF;
+
+		&:hover {
+			background-color: #3385bd;
+		}
+	}
+}

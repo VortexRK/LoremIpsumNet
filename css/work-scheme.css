@@ -1,0 +1,114 @@
+.work-scheme {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 20px;
+  align-items: flex-start;
+}
+@media (max-width: 992px) {
+  .work-scheme {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .work-scheme {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+
+.scheme-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.scheme-box_dots:nth-child(n+2)::before {
+  content: url(/img/dots5.png);
+  position: absolute;
+  top: 40px;
+  left: -70px;
+}
+.scheme-box_dots:nth-child(5n+1)::before {
+  content: url();
+  position: absolute;
+}
+@media (max-width: 1080px) {
+  .scheme-box_dots:nth-child(n+2)::before {
+    content: url(/img/dots4.png);
+    left: -57px;
+  }
+  .scheme-box_dots:nth-child(5n+1)::before {
+    content: url();
+    position: absolute;
+  }
+}
+@media (max-width: 992px) {
+  .scheme-box_dots:nth-child(n+2)::before {
+    content: url(/img/dots5.png);
+    position: absolute;
+    top: 40px;
+    left: -70px;
+  }
+  .scheme-box_dots:nth-child(3n+1)::before {
+    content: url();
+    position: absolute;
+  }
+}
+@media (max-width: 650px) {
+  .scheme-box_dots:nth-child(n+2)::before {
+    content: url(/img/dots4.png);
+    position: absolute;
+    top: 40px;
+    left: -57px;
+  }
+  .scheme-box_dots:nth-child(3n+1)::before {
+    content: url();
+    position: absolute;
+  }
+}
+@media (max-width: 576px) {
+  .scheme-box_dots:nth-child(2n+2)::before {
+    content: url(/img/dots5.png);
+    left: -63px;
+  }
+  .scheme-box_dots:nth-child(2n+1)::before {
+    content: url();
+    position: absolute;
+  }
+}
+@media (max-width: 450px) {
+  .scheme-box_dots:nth-child(2n+2)::before {
+    content: url(/img/dots2.png);
+    position: absolute;
+    top: 40px;
+    left: -24px;
+  }
+}
+.scheme-box__icon {
+  width: 100px;
+  height: 100px;
+  background: #3E9CDC;
+  border-radius: 50%;
+  border: 5px solid #286690;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scheme-box__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  word-wrap: break-word;
+}
+@media (max-width: 450px) {
+  .scheme-box__text {
+    max-width: 138px;
+  }
+}/*# sourceMappingURL=work-scheme.css.map */

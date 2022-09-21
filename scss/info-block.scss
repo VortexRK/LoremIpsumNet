@@ -1,0 +1,32 @@
+.info-block {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+
+	&__margin-right {
+		margin-right: 40px;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+		color: #C3C3C3;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #FFFFFF;
+
+		&:hover {
+			color: #3E9CDC;
+		}
+	}
+}
